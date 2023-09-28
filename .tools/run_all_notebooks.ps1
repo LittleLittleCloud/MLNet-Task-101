@@ -23,6 +23,8 @@ foreach ($notebook in $notebooks) {
     Write-Host "Running $notebook"
     $name = $notebook.Name
     $outputPath = "$outputFolder\$name"
+    $notebookFolder = Split-Path -Parent $notebook
+    Set-Location $notebookFolder
     $result = dotnet repl --run $notebook --exit-after-run --output-path $outputPath --working-dir $outputFolder
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Failed to run $notebook"
