@@ -1,0 +1,5 @@
+{
+  "task_name": "Regression using LightGBM",
+  "task_description": "Use LightGBM to train a regression model on a dummy dataset and save the model to regression.mlnet. The path to that dummy dataset is \u0022D:\\dataset\\taxi-fare_train.csv\u0022. Peek the first 10 rows of that dataset first and implement a regression model on fare_amount. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": false
+}

@@ -1,0 +1,5 @@
+{
+  "task_name": "Anomaly Detection",
+  "task_description": "Create a dummy time series dataset and implement an anomaly detection model. Highlight and print the anomalies. Save the trained model to anomalyDetection.mlnet.",
+  "is_succeed": true
+}

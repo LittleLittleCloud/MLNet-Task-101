@@ -1,0 +1,5 @@
+{
+  "task_name": "Multiclass Classification with SVM",
+  "task_description": "Load a multiclass classification dataset and train a support vector machine (SVM) model. Classify the dataset using the trained model and print out the accuracy. Save the SVM model to svm.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

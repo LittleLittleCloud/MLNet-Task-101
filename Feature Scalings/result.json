@@ -1,0 +1,5 @@
+{
+  "task_name": "Feature Scalings",
+  "task_description": "Create a dummy dataset with large range difference in values across features. Apply feature scaling methods such as MinMax scaling and Standard scaling and compare. Save the transform model to featureScaling.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

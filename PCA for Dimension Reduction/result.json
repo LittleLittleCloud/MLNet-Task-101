@@ -1,0 +1,5 @@
+{
+  "task_name": "PCA for Dimension Reduction",
+  "task_description": "Implement PCA on a dummy dataset with a large number of features for dimension reduction. Print the principal components and the variance explained by each component. Save the result to PCA.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

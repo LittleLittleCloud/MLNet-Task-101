@@ -1,0 +1,5 @@
+{
+  "task_name": "Beginner Linear Regression",
+  "task_description": "Create a dummy numeric dataset containing two features X and Y and implement simple linear regression. Calculate the coefficients of the regression line. Save the model to simpleRegression.mlnet for future use. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

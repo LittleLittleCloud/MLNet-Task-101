@@ -1,0 +1,5 @@
+{
+  "task_name": "Regression with FastTree",
+  "task_description": "create a dummy regression dataset and train a decision tree regression model using the FastTree algorithm. Predict the target variable for a test dataset using the trained model and print the predictions. Save the decision tree regression model to fasttree_regression.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

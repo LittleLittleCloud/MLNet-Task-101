@@ -1,0 +1,5 @@
+{
+  "task_name": "Multi-class Classification",
+  "task_description": "Create a multiclass classification model using a dummy dataset with three classes column and four features columns. Evaluate and print the model accuracy. Save the trained model to multiClass.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

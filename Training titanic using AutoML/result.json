@@ -1,0 +1,5 @@
+{
+  "task_name": "Training titanic using AutoML",
+  "task_description": "Train a classification model on titanic.csv and save it to titanic.mlnet, the path to titanic.csv is \u0022D:\\dataset\\titanic.csv\u0022. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}

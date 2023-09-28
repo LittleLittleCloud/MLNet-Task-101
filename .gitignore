@@ -1,0 +1,4 @@
+*.mlnet
+*.cs
+dotnet-tools.json
+*.config

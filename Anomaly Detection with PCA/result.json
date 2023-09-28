@@ -1,0 +1,5 @@
+{
+  "task_name": "Anomaly Detection with PCA",
+  "task_description": "Load an anomaly detection dataset and apply the PCA algorithm to reduce the dimensionality. Train an anomaly detection model using the reduced dataset. Classify the dataset using the trained model and print out the rows classified as anomalies. Save the anomaly detection model to anomaly_detection.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
+  "is_succeed": true
+}
