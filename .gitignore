@@ -1,5 +1,7 @@
 *.mlnet
 *.cs
+dotnet-tools.json
+*.config
 titanic-10.csv
 
 output/
