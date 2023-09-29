@@ -15,11 +15,18 @@ This project is still in its early stage and LLM will keep adding more tasks and
 
 ## Task generation
 Each task is created via three steps:
-- task generation: we use gpt-4 to generate a tasks which contains task name and description. A generated task can be found [here](./Anomaly%20Detection%20with%20PCA/result.json).
+- task generation: currently, we use gpt-4 to generate a tasks which contains task name and description. A generated task can be found [here](./Anomaly%20Detection%20with%20PCA/result.json). We are also welcome to any manully-created task. If you want to create a task, please check out our [contribution guide](./CONTRIBUTING.md).
 - mlnet solution generation: we create a multi-agent group to generate a runnable ML.Net solution for each task. The multi-agent group contains four agents: An admin agent to describe the task, an engineer agent to generate the ML.Net solution, an executor agent to compile and run engineer's solution and an examplar agent to provide mlnet examples either from [ML.Net example folder](https://github.com/dotnet/machinelearning/tree/main/docs/samples), or from recently-created ml.net task 101. We provide complete chat history on how the solution is generated, saved as 'chat_history.json'. An example can be found [here](./Anomaly%20Detection%20with%20PCA/chat_history.json).
 - notebook generation: once the solution is generated, we create a two-agent group to convert csharp code to [interactive notebook](https://github.com/dotnet/interactive). Similar to the previous step, we provide complete chat history on how the notebook is generated, saved as 'create_notebook_history.json'. An example can be found [here](./Anomaly%20Detection%20with%20PCA/create_notebook_history.json).
 
 Once a task is successfully created and its notebook is generated, the examplar agent will add the task to its knowledge base to better address more related tasks in the future.
+
+## How to contribute
+We welcome any contribution to this project. You can contribute mainly in two ways:
+- Create a new task
+- Improve an existing notebook
+
+For more details, please check out our [contribution guide](./CONTRIBUTING.md).
 
 ## About multi-agent group chat
 We address multi-agent group chat heavily on generating executable mlnet solution and its associated notebook. To better understand how the multi-agent group chat works, please check out our library:[AutoGen](https://github.com/microsoft/autogen) and corresponding paper [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework](https://arxiv.org/abs/2308.08155).

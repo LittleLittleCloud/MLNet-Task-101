@@ -1,5 +1,6 @@
 {
   "task_name": "Binary Classification with Logistic Regression",
   "task_description": "Use a binary classification dataset and train a logistic regression model. Classify the dataset using the trained model and print out the rows of the first class. Save the logistic regression model to logistic_regression.mlnet. Once completed, print \u0027task resolved\u0027 in the end.",
-  "is_succeed": true
+  "is_succeed": true,
+  "output": "logistic_regression.mlnet"
 }

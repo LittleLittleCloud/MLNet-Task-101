@@ -1,5 +1,6 @@
 {
   "task_name": "Multiclass Classification using LightGBM",
   "task_description": "Use LightGBM to train a multiclass classification model on iris dataset and save the model to iris.mlnet. The path to iris is \u0022D:\\dataset\\IRIS.MDF-iris-full.csv\u0022. Once completed, print \u0027task resolved\u0027 in the end.",
-  "is_succeed": true
+  "is_succeed": true,
+  "output": "iris.mlnet"
 }
