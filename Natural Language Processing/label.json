@@ -1,5 +1,6 @@
 {
   "task_name": "Natural Language Processing",
   "task_description": "Implement a text classification model using a dummy text dataset. Evaluate model performance by metrics such as Accuracy, F1-score and save the model to textClassification.mlnet, Once completed, print \u0027task resolved\u0027 in the end.",
-  "is_succeed": false
+  "is_succeed": false,
+  "output": "textClassification.mlnet"
 }
