@@ -2,6 +2,8 @@
 
 Home for a series of [ML.Net](https://github.com/dotnet/machinelearning) tasks and its notebook solutions.
 
+[![CI](https://github.com/LittleLittleCloud/MLNet-Task-101/actions/workflows/ci.yml/badge.svg)](https://github.com/LittleLittleCloud/MLNet-Task-101/actions/workflows/ci.yml)
+
 ## Disclaimer
 All tasks and solutions are created by Large Language Model (LLM) in 99%. It may contain errors. Please use at your own risk.
 After notebook is generated, we will manually review the notebook and make sure it is runnable. If there're mistakes we'll manually fix it and that's where the 1% happen. We do expect that after more and more tasks generated, we can eliminate the 1% in the end.
