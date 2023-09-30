@@ -6,22 +6,16 @@ on:
     branches: [ "main" ]
 
 jobs:
-  # This workflow contains a single job called "test_notebooks"
-  clone_copilot_builder_repo:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: 'LittleLittleCloud/CopilotBuilder'
-          ref: 'main'
-          ssh-strict: true
-          ssh-key: ${{ secrets.COPILOTBUILDER_SSH }}
   create_notebook:
-    needs: clone_copilot_builder_repo
     environment: CopilotBuilder
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'LittleLittleCloud/CopilotBuilder'
+          ref: 'main'
+          token: ${{ secrets.COPILOTBUILDER_PAT }}
       - uses: actions/checkout@v3
         with:
           path: 'MLTask_101'
@@ -30,32 +24,38 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           global-json-file: global.json
-          source-url: ${{ env.AZURE_ARTIFACTS_FEED_URL }}
+          source-url: ${{ vars.AZURE_ARTIFACTS_FEED_URL }}
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.AZURE_ARTIFACTS_PAT }}
+          
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore --use-current-runtime
+
       - name: Build CopilotBuilder
-        run: dotnet build .\src\CopilotBuilder.CodingTask\CopilotBuilder.CodingTask.csproj --configuration Release --no-restore
+        run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore --use-current-runtime
       
       - name: Run CopilotBuilder
-        run: dotnet run --no-build --project .\src\CopilotBuilder.CodingTask\CopilotBuilder.CodingTask.csproj -- --task-folder MLTask_101
+        run: dotnet run --no-build --configuration Release --runtime linux-x64 --project ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj -- --task-folder MLTask_101
         env:
           GPT_35_API_KEY: ${{ secrets.GPT_35_API_KEY }}
           GPT_4_API_KEY: ${{ secrets.GPT_4_API_KEY }}
           GPT_35_ENDPOINT: ${{ secrets.GPT_35_ENDPOINT }}
           GPT_4_ENDPOINT: ${{ secrets.GPT_4_ENDPOINT }}
 
-      - name: Create PR from MLTask_101
+      - name: Create PR from MLTask_101 if there are changes
         run: |
           git config --global user.name "CopilotBuilder"
           git config --global user.email "g2260578356@gmail.com"
           cd MLTask_101
-          git checkout -b u/cb/add_notebook_${{ github.build_id }}
+          git checkout -b u/cb/add_notebook_${{ github.run_id }}
           git add .
+          if [[ -z $(git diff --cached --exit-code) ]]; then
+            echo "No changes to commit"
+            exit 0
+          fi
           git commit -m "Add notebook from CopilotBuilder"
-          git push --set-upstream origin u/cb/add_notebook_${{ github.build_id }}
-          gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head u/cb/add_notebook_${{ github.build_id }}
+          git push --set-upstream origin u/cb/add_notebook_${{ github.run_id }}
+          gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head u/cb/add_notebook_${{ github.run_id }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
