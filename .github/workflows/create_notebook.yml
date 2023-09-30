@@ -4,8 +4,9 @@ name: Create Notebook
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
-
+    branches: [ "main", "test_main" ]
+  workflow_dispatch:
+      
 jobs:
   create_notebook:
     environment: CopilotBuilder
@@ -48,15 +49,18 @@ jobs:
           git config --global user.name "CopilotBuilder"
           git config --global user.email "g2260578356@gmail.com"
           cd MLTask_101
-          git checkout -b u/cb/add_notebook_${{ github.run_id }}
+          # if branch name is main, then create a branch named u/cb/add_notebook_${{ github.run_id }}
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            git checkout -b u/cb/add_notebook_${{ github.run_id }}
+          fi
           git add .
           if [[ -z $(git diff --cached --exit-code) ]]; then
             echo "No changes to commit"
             exit 0
           fi
           git commit -m "Add notebook from CopilotBuilder"
-          git push --set-upstream origin u/cb/add_notebook_${{ github.run_id }}
-          gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head u/cb/add_notebook_${{ github.run_id }}
+          git push --set-upstream origin HEAD
+          gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head HEAD --repo LittleLittleCloud/MLTask_101 --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
