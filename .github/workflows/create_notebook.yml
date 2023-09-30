@@ -32,10 +32,10 @@ jobs:
         run: dotnet restore
 
       - name: Build CopilotBuilder
-        run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore
+        run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore --runtime --use-current-runtime
       
       - name: Run CopilotBuilder
-        run: dotnet run --no-build --project ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj -- --task-folder MLTask_101
+        run: dotnet run --no-build --runtime linux-x64 --project ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj -- --task-folder MLTask_101
         env:
           GPT_35_API_KEY: ${{ secrets.GPT_35_API_KEY }}
           GPT_4_API_KEY: ${{ secrets.GPT_4_API_KEY }}
