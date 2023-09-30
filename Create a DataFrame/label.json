@@ -1,0 +1,5 @@
+{
+    "task_name": "Create a DataFrame",
+    "task_description": "Create a dataframe with at least 5 columns. The first column should be a unique identifier for each row.  The last column should be the label you are trying to predict.  The other columns should be features that you think will help predict the label.  The dataframe should have at least 100 rows. Once you create that, save it as dummy.csv and print 'task resolved'",
+    "output": "dummy.csv"
+  }
