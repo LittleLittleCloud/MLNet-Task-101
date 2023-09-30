@@ -3,7 +3,7 @@ name: Create Notebook
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "test_main" ]
 
 jobs:
   # This workflow contains a single job called "test_notebooks"
@@ -14,8 +14,7 @@ jobs:
         with:
           repository: 'LittleLittleCloud/CopilotBuilder'
           ref: 'main'
-          ssh-strict: true
-          ssh-key: ${{ secrets.COPILOTBUILDER_SSH }}
+          token: ${{ secrets.COPILOTBUILDER_PAT }}
   create_notebook:
     needs: clone_copilot_builder_repo
     environment: CopilotBuilder
