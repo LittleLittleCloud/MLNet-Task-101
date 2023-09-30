@@ -1,0 +1,5 @@
+{
+    "task_name": "Conversion to Numerical Vectors",
+    "task_description": "Create a dummy dataset with categorical columns using a dataframe. Convert all the categorical columns into numerical vectors, then print the first 10 rows. Once completed, save the dataframe into df.csv and print 'task resolved' in the end.",
+    "output": "df.csv"
+  }

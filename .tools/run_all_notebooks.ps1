@@ -9,8 +9,10 @@ New-Item -ItemType Directory -Path $outputFolder
 
 Set-Location $rootPath
 
+# list all newly added notebooks by comparing with the main branch
+$mainBranch = "main"
+$notebooks = git diff --name-only $mainBranch | Where-Object { $_ -like "*.ipynb" }
 # list all notebooks and print out
-$notebooks = Get-ChildItem -Path . -Filter *.ipynb -Recurse
 foreach ($notebook in $notebooks) {
     Write-Host $notebook
 }

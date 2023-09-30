@@ -1,0 +1,5 @@
+{
+    "task_name": "Fill Missing Values",
+    "task_description": "create a dummy dataset using a dataframe that contains missing values. Fill the missing values using an appropriate strategy like the mean or mod. Save the resulting dataframe as cleanedData.csv and print the first 10 rows. Once completed, print 'task resolved' in the end.",
+    "output": "cleanedData.csv"
+  }
