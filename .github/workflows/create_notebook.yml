@@ -3,7 +3,7 @@ name: Create Notebook
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main", "test_main" ]
+    branches: [ "main" ]
 
 jobs:
   create_notebook:
