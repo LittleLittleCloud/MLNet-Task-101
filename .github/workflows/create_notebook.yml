@@ -4,8 +4,8 @@ name: Create Notebook
 on:
   workflow_dispatch:
   push:
-    branches: [ "main", "test_main" ]
-  workflow_dispatch:
+    branches: [ "main" ]
+    workflow_dispatch:
       
 jobs:
   create_notebook:
