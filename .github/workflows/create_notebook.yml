@@ -24,11 +24,13 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           global-json-file: global.json
-          source-url: ${{ env.AZURE_ARTIFACTS_FEED_URL }}
+          source-url: ${{ vars.AZURE_ARTIFACTS_FEED_URL }}
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.AZURE_ARTIFACTS_PAT }}
+          
       - name: Restore dependencies
         run: dotnet restore
+
       - name: Build CopilotBuilder
         run: dotnet build .\src\CopilotBuilder.CodingTask\CopilotBuilder.CodingTask.csproj --configuration Release --no-restore
       
