@@ -9,6 +9,7 @@ jobs:
   # This workflow contains a single job called "test_notebooks"
   clone_copilot_builder_repo:
     runs-on: ubuntu-latest
+    environment: CopilotBuilder
     steps:
       - uses: actions/checkout@v2
         with:
