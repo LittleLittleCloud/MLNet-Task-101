@@ -32,7 +32,7 @@ jobs:
         run: dotnet restore
 
       - name: Build CopilotBuilder
-        run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore --runtime --use-current-runtime
+        run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore --use-current-runtime
       
       - name: Run CopilotBuilder
         run: dotnet run --no-build --runtime linux-x64 --project ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj -- --task-folder MLTask_101
