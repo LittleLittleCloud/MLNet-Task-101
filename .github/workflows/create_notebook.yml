@@ -59,7 +59,10 @@ jobs:
           fi
           git commit -m "Add notebook from CopilotBuilder"
           git push --set-upstream origin HEAD
-          gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head HEAD --repo LittleLittleCloud/MLTask_101 --fill
+
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            gh pr create --title "Add notebook from CopilotBuilder" --body "Add notebook from CopilotBuilder" --base main --head u/cb/add_notebook_${{ github.run_id }} --repo LittleLittleCloud/MLNet-Task-101 --fill
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
