@@ -29,7 +29,7 @@ jobs:
           NUGET_AUTH_TOKEN: ${{ secrets.AZURE_ARTIFACTS_PAT }}
           
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore --use-current-runtime
 
       - name: Build CopilotBuilder
         run: dotnet build ./src/CopilotBuilder.CodingTask/CopilotBuilder.CodingTask.csproj --configuration Release --no-restore --use-current-runtime
