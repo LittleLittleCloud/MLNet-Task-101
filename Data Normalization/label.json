@@ -1,0 +1,5 @@
+{
+    "task_name": "Data Normalization",
+    "task_description": "create a dummy dataset using a dataframe. Normalize the numerical columns to a range of 0 to 1. Save the resulting dataframe as normalizedData.csv and print the first 10 rows. Once completed, print 'task resolved' in the end.",
+    "output": "normalizedData.csv"
+  }

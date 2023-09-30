@@ -1,0 +1,5 @@
+{
+    "task_name": "Binary Classification using DataFrame",
+    "task_description": "Create a binary classification model using a dummy DataFrame with one label column and four feature columns. The label column should represent a binary outcome. Train the model, evaluate it and print the model accuracy. Save the trained model as binaryClassification.mlnet and print 'task completed' in the end.",
+    "output": "binaryClassification.mlnet"
+}
