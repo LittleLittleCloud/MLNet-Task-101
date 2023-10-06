@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve DnnFeaturizeImage Task",
+  "task_description": "Implement the DnnFeaturizeImage code in a dotnet interactive notebook",
+  "output": "DnnFeaturizedImageOutput.txt",
+  "is_succeed": true
+}

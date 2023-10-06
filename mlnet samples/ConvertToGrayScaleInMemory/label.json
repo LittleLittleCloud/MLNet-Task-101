@@ -1,0 +1,6 @@
+{
+  "task_name": "ConvertToGrayScaleInMemory",
+  "task_description": "Implement the ConvertToGrayScaleInMemory example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": false
+}

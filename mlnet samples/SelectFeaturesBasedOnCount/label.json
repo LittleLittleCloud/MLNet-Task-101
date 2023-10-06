@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SelectFeaturesBasedOnCount Task",
+  "task_description": "Implement the SelectFeaturesBasedOnCount task using the provided C# code and save the result to an output file.",
+  "output": "transformed_data.csv",
+  "is_succeed": true
+}

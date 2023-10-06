@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SaveAndLoadFromBinary",
+  "task_description": "Implement the SaveAndLoadFromBinary example in a dotnet interactive notebook",
+  "output": "data.idv",
+  "is_succeed": true
+}

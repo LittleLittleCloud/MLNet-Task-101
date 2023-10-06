@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve ExtractPixels Task",
+  "task_description": "Implement the ExtractPixels task using the provided C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

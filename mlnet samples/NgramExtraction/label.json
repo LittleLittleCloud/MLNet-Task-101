@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve Ngram Extraction Task",
+  "task_description": "Implement Ngram extraction using the provided C# code",
+  "output": "NgramOutput.txt",
+  "is_succeed": true
+}

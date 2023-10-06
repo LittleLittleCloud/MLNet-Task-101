@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeMinMax",
+  "task_description": "Implement the NormalizeMinMax example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

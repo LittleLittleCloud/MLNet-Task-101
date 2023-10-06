@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve VectorWhitenWithOptions task",
+  "task_description": "Implement the provided C# code as a dotnet interactive notebook",
+  "output": "VectorWhitenWithOptions.ipynb",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve NaiveBayes Task",
+  "task_description": "Implement the NaiveBayes algorithm using the provided C# code and save the output to a file.",
+  "output": "naivebayes_output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Ordinary Least Squares Regression",
+  "task_description": "Implement the provided C# code for Ordinary Least Squares Regression using ML.NET",
+  "output": "ols_regression_result.txt",
+  "is_succeed": true
+}

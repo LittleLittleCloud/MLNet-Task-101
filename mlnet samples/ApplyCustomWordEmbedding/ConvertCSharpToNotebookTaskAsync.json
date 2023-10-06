@@ -1,0 +1,202 @@
+[
+  {
+    "content": "Welcome to the group chat! Work together to resolve task from labeller by crafting a dotnet interactive notebook for provided csharp code. I\u0027ll say [TERMINATE] if notebook get created and all cells are added. ",
+    "role": "user",
+    "name": "admin"
+  },
+  {
+    "content": "I\u0027ll create a task and save task to label.json",
+    "role": "user",
+    "name": "labeller"
+  },
+  {
+    "content": "I\u0027ll provide step-by-step plan to resolve task.",
+    "role": "user",
+    "name": "architect"
+  },
+  {
+    "content": "I\u0027ll write dotnet interactive notebook to implement each step after label.json is created",
+    "role": "user",
+    "name": "engineer"
+  },
+  {
+    "content": "I\u0027ll save engineer\u0027s notebook right next to label.json. The name of notebook will be ApplyCustomWordEmbedding.ipynb",
+    "role": "user",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "Great, let\u0027s start. labeller, please create task. architech, please create step-by-step plan and engineer, please resolve task based on that plan.",
+    "role": "user",
+    "name": "admin"
+  },
+  {
+    "content": "create task successfully, the task name is Implement ApplyCustomWordEmbedding, the task description is Implement the ApplyCustomWordEmbedding example using ML.NET",
+    "role": "function",
+    "name": "labeller"
+  },
+  {
+    "content": "- step1: (required) add task name and description\n    \u0027\u0027\u0027markdown\n    task name: Implement ApplyCustomWordEmbedding\n    task description: Implement the ApplyCustomWordEmbedding example using ML.NET\n    \u0027\u0027\u0027\n- step2: (required) install nuget package\n    \u0027\u0027\u0027nuget\n    dotnet add package Microsoft.ML\n    \u0027\u0027\u0027\n- step3: (required) import all namespaces\n    \u0060\u0060\u0060csharp\n    using System;\n    using System.Collections.Generic;\n    using System.IO;\n    using Microsoft.ML;\n    \u0060\u0060\u0060\n- step4: create MLContext\n    \u0060\u0060\u0060csharp\n    var mlContext = new MLContext();\n    \u0060\u0060\u0060\n- step5: create empty dataset\n    \u0060\u0060\u0060csharp\n    var emptySamples = new List\u003CTextData\u003E();\n    var emptyDataView = mlContext.Data.LoadFromEnumerable(emptySamples);\n    \u0060\u0060\u0060\n- step6: create custom word embedding model\n    \u0060\u0060\u0060csharp\n    var pathToCustomModel = @\u0022.\\custommodel.txt\u0022;\n    using (StreamWriter file = new StreamWriter(pathToCustomModel, false))\n    {\n        file.WriteLine(\u0022great 1.0 2.0 3.0\u0022);\n        file.WriteLine(\u0022product -1.0 -2.0 -3.0\u0022);\n        file.WriteLine(\u0022like -1 100.0 -100\u0022);\n        file.WriteLine(\u0022buy 0 0 20\u0022);\n    }\n    \u0060\u0060\u0060\n- step7: create text processing pipeline\n    \u0060\u0060\u0060csharp\n    var textPipeline = mlContext.Transforms.Text.NormalizeText(\u0022Text\u0022)\n        .Append(mlContext.Transforms.Text.TokenizeIntoWords(\u0022Tokens\u0022, \u0022Text\u0022))\n        .Append(mlContext.Transforms.Text.ApplyWordEmbedding(\u0022Features\u0022, pathToCustomModel, \u0022Tokens\u0022));\n    \u0060\u0060\u0060\n- step8: fit pipeline to data\n    \u0060\u0060\u0060csharp\n    var textTransformer = textPipeline.Fit(emptyDataView);\n    \u0060\u0060\u0060\n- step9: create prediction engine\n    \u0060\u0060\u0060csharp\n    var predictionEngine = mlContext.Model.CreatePredictionEngine\u003CTextData, TransformedTextData\u003E(textTransformer);\n    \u0060\u0060\u0060\n- step10: make prediction\n    \u0060\u0060\u0060csharp\n    var data = new TextData() { Text = \u0022This is a great product. I would like to buy it again.\u0022 };\n    var prediction = predictionEngine.Predict(data);\n    \u0060\u0060\u0060\n- step11: print result\n    \u0060\u0060\u0060csharp\n    Console.WriteLine($\u0022Number of Features: {prediction.Features.Length}\u0022);\n    Console.Write(\u0022Features: \u0022);\n    foreach (var f in prediction.Features)\n        Console.Write($\u0022{f:F4} \u0022);\n    \u0060\u0060\u0060",
+    "role": "assistant",
+    "name": "architect"
+  },
+  {
+    "content": "step1: add task name and description\n\u0060\u0060\u0060markdown\ntask name: Implement ApplyCustomWordEmbedding\ntask description: Implement the ApplyCustomWordEmbedding example using ML.NET\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #1. The cell type is markdown cell. The cell index is 1.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 1 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step2: install nuget package\n\u0060\u0060\u0060nuget\ndotnet add package Microsoft.ML\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #2. The cell type is code cell. The cell index is 2.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "Error: (1,12): error CS1002: ; expected\r\n(1,32): error CS1003: Syntax error, \u0027(\u0027 expected\r\n(1,32): error CS1026: ) expected\r\n(1,32): error CS1002: ; expected\r Please fix the error and try again.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step2: install nuget package\n\u0060\u0060\u0060nuget\n#r \u0022nuget:Microsoft.ML, 1.6.0\u0022\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #2. The cell type is code cell. The cell index is 2.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 2 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step3: import all namespaces\n\u0060\u0060\u0060csharp\nusing System;\nusing System.Collections.Generic;\nusing System.IO;\nusing Microsoft.ML;\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #3. The cell type is code cell. The cell index is 3.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 3 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step4: create MLContext\n\u0060\u0060\u0060csharp\nvar mlContext = new MLContext();\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #4. The cell type is code cell. The cell index is 4.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 4 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step5: create empty dataset\n\u0060\u0060\u0060csharp\nvar emptySamples = new List\u003CTextData\u003E();\nvar emptyDataView = mlContext.Data.LoadFromEnumerable(emptySamples);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #5. The cell type is code cell. The cell index is 5.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "Error: (1,29): error CS0246: The type or namespace name \u0027TextData\u0027 could not be found (are you missing a using directive or an assembly reference?)\r Please fix the error and try again.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step5: create empty dataset\n\u0060\u0060\u0060csharp\npublic class TextData\n{\n    public string Text { get; set; }\n}\n\nvar emptySamples = new List\u003CTextData\u003E();\nvar emptyDataView = mlContext.Data.LoadFromEnumerable(emptySamples);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #5. The cell type is code cell. The cell index is 5.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 5 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step6: create custom word embedding model\n\u0060\u0060\u0060csharp\nvar pathToCustomModel = @\u0022.\\custommodel.txt\u0022;\nusing (StreamWriter file = new StreamWriter(pathToCustomModel, false))\n{\n    file.WriteLine(\u0022great 1.0 2.0 3.0\u0022);\n    file.WriteLine(\u0022product -1.0 -2.0 -3.0\u0022);\n    file.WriteLine(\u0022like -1 100.0 -100\u0022);\n    file.WriteLine(\u0022buy 0 0 20\u0022);\n}\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #6. The cell type is code cell. The cell index is 6.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 6 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step7: create text processing pipeline\n\u0060\u0060\u0060csharp\nvar textPipeline = mlContext.Transforms.Text.NormalizeText(\u0022Text\u0022)\n    .Append(mlContext.Transforms.Text.TokenizeIntoWords(\u0022Tokens\u0022, \u0022Text\u0022))\n    .Append(mlContext.Transforms.Text.ApplyWordEmbedding(\u0022Features\u0022, pathToCustomModel, \u0022Tokens\u0022));\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #7. The cell type is code cell. The cell index is 7.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 7 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step8: fit pipeline to data\n\u0060\u0060\u0060csharp\nvar textTransformer = textPipeline.Fit(emptyDataView);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #8. The cell type is code cell. The cell index is 8.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 8 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step9: create prediction engine\n\u0060\u0060\u0060csharp\nvar predictionEngine = mlContext.Model.CreatePredictionEngine\u003CTextData, TransformedTextData\u003E(textTransformer);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #9. The cell type is code cell. The cell index is 9.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "engineer, Please speak.",
+    "role": "assistant",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step9: create prediction engine\n\u0060\u0060\u0060csharp\npublic class TransformedTextData : TextData\n{\n    public float[] Features { get; set; }\n}\n\nvar predictionEngine = mlContext.Model.CreatePredictionEngine\u003CTextData, TransformedTextData\u003E(textTransformer);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #9. The cell type is code cell. The cell index is 9.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 9 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step10: make prediction\n\u0060\u0060\u0060csharp\nvar data = new TextData() { Text = \u0022This is a great product. I would like to buy it again.\u0022 };\nvar prediction = predictionEngine.Predict(data);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #10. The cell type is code cell. The cell index is 10.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 10 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step11: print result\n\u0060\u0060\u0060csharp\nConsole.WriteLine($\u0022Number of Features: {prediction.Features.Length}\u0022);\nConsole.Write(\u0022Features: \u0022);\nforeach (var f in prediction.Features)\n    Console.Write($\u0022{f:F4} \u0022);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #11. The cell type is code cell. The cell index is 11.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "Error: \u0027@\u0027 is an invalid start of a value. Path: $.cellContent | LineNumber: 1 | BytePositionInLine: 17.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step11: print result\n\u0060\u0060\u0060csharp\nConsole.WriteLine($\u0022Number of Features: {prediction.Features.Length}\u0022);\nConsole.Write(\u0022Features: \u0022);\nforeach (var f in prediction.Features)\n    Console.Write($\u0022{f:F4} \u0022);\n\u0060\u0060\u0060\nnotebook_writer, save this step as cell #11. The cell type is code cell. The cell index is 11.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell 11 is added to D:\\CodingTask\\mlnet samples\\ApplyCustomWordEmbedding\\ApplyCustomWordEmbedding.ipynb.\r\nThe output is Number of Features: 9\r\n\nFeatures: \n-1.0000 \n0.0000 \n-100.0000 \n0.0000 \n34.0000 \n-25.6667 \n1.0000 \n10...(remaining output)",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "[COMPLETE]",
+    "role": "assistant",
+    "name": "admin"
+  },
+  {
+    "content": "[TERMINATE]",
+    "role": "assistant",
+    "name": "admin"
+  }
+]

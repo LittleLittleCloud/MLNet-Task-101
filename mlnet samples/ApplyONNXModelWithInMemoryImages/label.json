@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement ApplyONNXModelWithInMemoryImages",
+  "task_description": "Implement the ApplyONNXModelWithInMemoryImages example using the provided C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

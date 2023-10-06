@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve FilterRowsByMissingValues",
+  "task_description": "Implement the FilterRowsByMissingValues example in a dotnet interactive notebook",
+  "output": "output.txt",
+  "is_succeed": true
+}

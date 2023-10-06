@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve ResizeImages Task",
+  "task_description": "Implement the provided C# code in a dotnet interactive notebook",
+  "output": "output.txt",
+  "is_succeed": true
+}

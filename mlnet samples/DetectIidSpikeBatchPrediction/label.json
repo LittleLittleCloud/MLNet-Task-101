@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement DetectIidSpikeBatchPrediction",
+  "task_description": "Implement the DetectIidSpikeBatchPrediction example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": false
+}

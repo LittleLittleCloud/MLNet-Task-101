@@ -1,0 +1,6 @@
+{
+  "task_name": "ReplaceMissingValuesMultiColumn",
+  "task_description": "Implement the ReplaceMissingValuesMultiColumn example using ML.NET",
+  "output": "ReplaceMissingValuesMultiColumn_output.txt",
+  "is_succeed": true
+}

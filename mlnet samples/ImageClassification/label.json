@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve Image Classification Task",
+  "task_description": "Implement the Image Classification task using the provided C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement DetectIidSpike",
+  "task_description": "Implement the DetectIidSpike example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

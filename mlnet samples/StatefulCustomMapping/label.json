@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve StatefulCustomMapping Task",
+  "task_description": "Implement the StatefulCustomMapping example using a dotnet interactive notebook.",
+  "output": "StatefulCustomMapping.ipynb",
+  "is_succeed": true
+}

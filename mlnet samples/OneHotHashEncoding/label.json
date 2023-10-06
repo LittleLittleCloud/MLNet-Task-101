@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve OneHotHashEncoding",
+  "task_description": "Implement the provided C# code for OneHotHashEncoding using a dotnet interactive notebook.",
+  "output": "OneHotHashEncoding.ipynb",
+  "is_succeed": true
+}

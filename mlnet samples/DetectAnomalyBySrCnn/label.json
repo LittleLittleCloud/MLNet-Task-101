@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement DetectAnomalyBySrCnn",
+  "task_description": "Implement the provided C# code for detecting anomalies in a time series using SrCnnAnomalyDetection.",
+  "output": "output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LightGbmWithOptions",
+  "task_description": "Implement the provided C# code for training a LightGBM binary classification model with options.",
+  "output": "LightGbmModel.zip",
+  "is_succeed": true
+}

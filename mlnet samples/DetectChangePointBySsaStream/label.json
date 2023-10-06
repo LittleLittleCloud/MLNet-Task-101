@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve DetectChangePointBySsaStream Task",
+  "task_description": "Implement the DetectChangePointBySsaStream example using a dotnet interactive notebook.",
+  "output": "DetectChangePointBySsaStream.ipynb",
+  "is_succeed": true
+}

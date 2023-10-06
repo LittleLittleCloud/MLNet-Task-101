@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve CalculateFeatureContributionCalibrated",
+  "task_description": "Implement the CalculateFeatureContributionCalibrated example using dotnet interactive notebook.",
+  "output": "CalculateFeatureContributionCalibrated.ipynb",
+  "is_succeed": true
+}

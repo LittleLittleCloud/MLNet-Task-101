@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SdcaMaximumEntropyWithOptions",
+  "task_description": "Implement the SdcaMaximumEntropyWithOptions example using the provided C# code and save the output to a file.",
+  "output": "output.txt",
+  "is_succeed": true
+}

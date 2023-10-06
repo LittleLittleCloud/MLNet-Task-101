@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve Hashing Task",
+  "task_description": "Implement hashing of categorical string and integer data types",
+  "output": "HashedData.csv",
+  "is_succeed": true
+}

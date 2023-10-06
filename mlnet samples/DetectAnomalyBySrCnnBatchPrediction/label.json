@@ -1,0 +1,6 @@
+{
+  "task_name": "Create DetectAnomalyBySrCnnBatchPrediction Notebook",
+  "task_description": "Create a dotnet interactive notebook for the provided C# code",
+  "output": "DetectAnomalyBySrCnnBatchPrediction.ipynb",
+  "is_succeed": false
+}

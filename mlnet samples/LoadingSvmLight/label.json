@@ -1,0 +1,6 @@
+{
+  "task_name": "LoadingSvmLight",
+  "task_description": "Implement the LoadingSvmLight.Example() method to load data with SvmLightLoader.",
+  "output": "SVM_Data.csv",
+  "is_succeed": true
+}

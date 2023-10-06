@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement PairwiseCoupling algorithm",
+  "task_description": "Implement the PairwiseCoupling algorithm using the provided C# code and save the result to an output file.",
+  "output": "pairwise_coupling_output.txt",
+  "is_succeed": true
+}

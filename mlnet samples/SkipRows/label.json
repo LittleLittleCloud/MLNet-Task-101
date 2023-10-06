@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SkipRows task",
+  "task_description": "Implement the SkipRows example using the provided C# code",
+  "output": "SkipRowsOutput.txt",
+  "is_succeed": true
+}

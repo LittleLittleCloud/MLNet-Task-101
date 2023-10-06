@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Prior Trainer",
+  "task_description": "Implement the Prior Trainer using the provided C# code and save the result to an output file.",
+  "output": "prior_trainer_output.txt",
+  "is_succeed": true
+}

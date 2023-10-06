@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement RemoveStopWords",
+  "task_description": "Implement the RemoveStopWords functionality using the provided C# code.",
+  "output": "RemoveStopWordsOutput.txt",
+  "is_succeed": true
+}

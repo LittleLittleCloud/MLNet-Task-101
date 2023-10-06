@@ -1,0 +1,147 @@
+[
+  {
+    "content": "Welcome to the group chat! Work together to resolve task from labeller by crafting a dotnet interactive notebook for provided csharp code. I\u0027ll say [TERMINATE] if notebook get created and all cells are added. ",
+    "role": "user",
+    "name": "admin"
+  },
+  {
+    "content": "I\u0027ll create a task and save task to label.json",
+    "role": "user",
+    "name": "labeller"
+  },
+  {
+    "content": "I\u0027ll provide step-by-step plan to resolve task.",
+    "role": "user",
+    "name": "architect"
+  },
+  {
+    "content": "I\u0027ll write dotnet interactive notebook to implement each step after label.json is created",
+    "role": "user",
+    "name": "engineer"
+  },
+  {
+    "content": "I\u0027ll save engineer\u0027s notebook right next to label.json. The name of notebook will be CustomMappingWithInMemoryCustomType.ipynb",
+    "role": "user",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "Great, let\u0027s start. labeller, please create task. architech, please create step-by-step plan and engineer, please resolve task based on that plan.",
+    "role": "user",
+    "name": "admin"
+  },
+  {
+    "content": "create task successfully, the task name is Resolve CustomMappingWithInMemoryCustomType, the task description is Implement the provided C# code as a dotnet interactive notebook",
+    "role": "function",
+    "name": "labeller"
+  },
+  {
+    "content": "- step1: (required) add task name and description\n    \u0027\u0027\u0027markdown\n    task name: Resolve CustomMappingWithInMemoryCustomType\n    task description: Implement the provided C# code as a dotnet interactive notebook\n    \u0027\u0027\u0027\n- step2: (required) install nuget package\n    \u0027\u0027\u0027nuget\n    dotnet nuget install Microsoft.ML\n    \u0027\u0027\u0027\n- step3: (required) import all namespaces\n    \u0060\u0060\u0060csharp\n    using System;\n    using System.Collections.Generic;\n    using System.Linq;\n    using Microsoft.ML;\n    using Microsoft.ML.Data;\n    \u0060\u0060\u0060\n- step4: create MLContext\n    \u0060\u0060\u0060csharp\n    var mlContext = new MLContext();\n    \u0060\u0060\u0060\n- step5: create in-memory data\n    \u0060\u0060\u0060csharp\n    var tribe = new List\u003CAlienHero\u003E() { new AlienHero(\u0022ML.NET\u0022, 2, 1000,\n                2000, 3000, 4000, 5000, 6000, 7000) };\n    \u0060\u0060\u0060\n- step6: Build a ML.NET pipeline and make prediction\n    \u0060\u0060\u0060csharp\n    var tribeDataView = mlContext.Data.LoadFromEnumerable(tribe);\n    var pipeline = mlContext.Transforms.CustomMapping(AlienFusionProcess\n                .GetMapping(), contractName: null);\n\n    var model = pipeline.Fit(tribeDataView);\n    var tribeTransformed = model.Transform(tribeDataView);\n    \u0060\u0060\u0060\n- step7: print out prediction produced by the model\n    \u0060\u0060\u0060csharp\n    var firstAlien = mlContext.Data.CreateEnumerable\u003CSuperAlienHero\u003E(\n                tribeTransformed, false).First();\n\n    Console.WriteLine(\u0022We got a super alien with name \u0022 \u002B firstAlien.Name \u002B\n                \u0022, age \u0022 \u002B firstAlien.Merged.Age \u002B \u0022, \u0022 \u002B \u0022height \u0022 \u002B firstAlien\n                .Merged.Height \u002B \u0022, weight  \u0022 \u002B firstAlien.Merged.Weight \u002B \u0022, and \u0022\n                \u002B firstAlien.Merged.HandCount \u002B \u0022 hands.\u0022);\n    \u0060\u0060\u0060\n- step8: Create a prediction engine and print out its prediction\n    \u0060\u0060\u0060csharp\n    var engine = mlContext.Model.CreatePredictionEngine\u003CAlienHero,\n                SuperAlienHero\u003E(model);\n\n    var alien = new AlienHero(\u0022TEN.LM\u0022, 1, 2, 3, 4, 5, 6, 7, 8);\n    var superAlien = engine.Predict(alien);\n    Console.Write(\u0022We got a super alien with name \u0022 \u002B superAlien.Name \u002B\n                \u0022, age \u0022 \u002B superAlien.Merged.Age \u002B \u0022, height \u0022 \u002B\n                superAlien.Merged.Height \u002B \u0022, weight \u0022 \u002B superAlien.Merged.Weight \u002B\n                \u0022, and \u0022 \u002B superAlien.Merged.HandCount \u002B \u0022 hands.\u0022);\n    \u0060\u0060\u0060",
+    "role": "assistant",
+    "name": "architect"
+  },
+  {
+    "content": "step1: add task name and description\n\u0060\u0060\u0060markdown\ntask name: Resolve CustomMappingWithInMemoryCustomType\ntask description: Implement the provided C# code as a dotnet interactive notebook\n\u0060\u0060\u0060\n@notebook_writer, save this step as cell #1. The cell type is markdown cell. The cell index is 1.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step2: install nuget package\n\u0060\u0060\u0060nuget\ndotnet nuget install Microsoft.ML\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #2. The cell type is nuget installation cell. The cell index is 2.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "Nuget packages are added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb. The following nugets are added: Microsoft.ML",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step3: import all namespaces\n\u0060\u0060\u0060csharp\nusing System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing Microsoft.ML;\nusing Microsoft.ML.Data;\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #3. The cell type is code cell. The cell index is 3.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step4: create MLContext\n\u0060\u0060\u0060csharp\nvar mlContext = new MLContext();\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #4. The cell type is code cell. The cell index is 4.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step5: create in-memory data\n\u0060\u0060\u0060csharp\nvar tribe = new List\u003CAlienHero\u003E() { new AlienHero(\u0022ML.NET\u0022, 2, 1000,\n            2000, 3000, 4000, 5000, 6000, 7000) };\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #5. The cell type is code cell. The cell index is 5.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "Error: (1,22): error CS0246: The type or namespace name \u0027AlienHero\u0027 could not be found (are you missing a using directive or an assembly reference?)\r\n(1,41): error CS0246: The type or namespace name \u0027AlienHero\u0027 could not be found (are you missing a using directive or an assembly reference?)\r Please fix the error and try again.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "I see, I forgot to add the class definitions for AlienHero, AlienBody, AlienTypeAttributeAttribute, DataViewAlienBodyType, SuperAlienHero and AlienFusionProcess. Let\u0027s add them before creating the in-memory data.\n\n\u0060\u0060\u0060csharp\nprivate class AlienBody\n{\n    public int Age { get; set; }\n    public float Height { get; set; }\n    public float Weight { get; set; }\n    public int HandCount { get; set; }\n\n    public AlienBody(int age, float height, float weight, int handCount)\n    {\n        Age = age;\n        Height = height;\n        Weight = weight;\n        HandCount = handCount;\n    }\n}\n\nprivate sealed class AlienTypeAttributeAttribute : DataViewTypeAttribute\n{\n    public int RaceId { get; }\n\n    public AlienTypeAttributeAttribute(int raceId)\n    {\n        RaceId = raceId;\n    }\n\n    public override void Register()\n    {\n        DataViewTypeManager.Register(new DataViewAlienBodyType(RaceId),\n            typeof(AlienBody), this);\n    }\n\n    public override bool Equals(DataViewTypeAttribute other)\n    {\n        if (other is AlienTypeAttributeAttribute alienTypeAttributeAttribute)\n            return RaceId == alienTypeAttributeAttribute.RaceId;\n        return false;\n    }\n\n    public override int GetHashCode() =\u003E RaceId.GetHashCode();\n}\n\nprivate class AlienHero\n{\n    public string Name { get; set; }\n\n    [AlienTypeAttribute(100)]\n    public AlienBody One { get; set; }\n\n    [AlienTypeAttribute(200)]\n    public AlienBody Two { get; set; }\n\n    public AlienHero()\n    {\n        Name = \u0022Unknown\u0022;\n        One = new AlienBody(0, 0, 0, 0);\n        Two = new AlienBody(0, 0, 0, 0);\n    }\n\n    public AlienHero(string name,\n        int age, float height, float weight, int handCount,\n        int anotherAge, float anotherHeight, float anotherWeight, int\n            anotherHandCount)\n    {\n        Name = name;\n        One = new AlienBody(age, height, weight, handCount);\n        Two = new AlienBody(anotherAge, anotherHeight, anotherWeight,\n            anotherHandCount);\n    }\n}\n\nprivate class DataViewAlienBodyType : StructuredDataViewType\n{\n    public int RaceId { get; }\n\n    public DataViewAlienBodyType(int id) : base(typeof(AlienBody))\n    {\n        RaceId = id;\n    }\n\n    public override bool Equals(DataViewType other)\n    {\n        if (other is DataViewAlienBodyType otherAlien)\n            return otherAlien.RaceId == RaceId;\n        return false;\n    }\n\n    public override int GetHashCode()\n    {\n        return RaceId.GetHashCode();\n    }\n}\n\nprivate class SuperAlienHero\n{\n    public string Name { get; set; }\n\n    [AlienTypeAttribute(007)]\n    public AlienBody Merged { get; set; }\n\n    public SuperAlienHero()\n    {\n        Name = \u0022Unknown\u0022;\n        Merged = new AlienBody(0, 0, 0, 0);\n    }\n}\n\nprivate class AlienFusionProcess\n{\n    public static void MergeBody(AlienHero input, SuperAlienHero output)\n    {\n        output.Name = \u0022Super \u0022 \u002B input.Name;\n        output.Merged.Age = input.One.Age \u002B input.Two.Age;\n        output.Merged.Height = input.One.Height \u002B input.Two.Height;\n        output.Merged.Weight = input.One.Weight \u002B input.Two.Weight;\n        output.Merged.HandCount = input.One.HandCount \u002B input.Two.HandCount;\n    }\n\n    public static Action\u003CAlienHero, SuperAlienHero\u003E GetMapping()\n    {\n        return MergeBody;\n    }\n}\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #5. The cell type is code cell. The cell index is 5.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step5: create in-memory data\n\u0060\u0060\u0060csharp\nvar tribe = new List\u003CAlienHero\u003E() { new AlienHero(\u0022ML.NET\u0022, 2, 1000,\n            2000, 3000, 4000, 5000, 6000, 7000) };\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #6. The cell type is code cell. The cell index is 6.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step6: Build a ML.NET pipeline and make prediction\n\u0060\u0060\u0060csharp\nvar tribeDataView = mlContext.Data.LoadFromEnumerable(tribe);\nvar pipeline = mlContext.Transforms.CustomMapping(AlienFusionProcess\n            .GetMapping(), contractName: null);\n\nvar model = pipeline.Fit(tribeDataView);\nvar tribeTransformed = model.Transform(tribeDataView);\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #7. The cell type is code cell. The cell index is 7.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is empty",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step7: print out prediction produced by the model\n\u0060\u0060\u0060csharp\nvar firstAlien = mlContext.Data.CreateEnumerable\u003CSuperAlienHero\u003E(\n            tribeTransformed, false).First();\n\nConsole.WriteLine(\u0022We got a super alien with name \u0022 \u002B firstAlien.Name \u002B\n            \u0022, age \u0022 \u002B firstAlien.Merged.Age \u002B \u0022, \u0022 \u002B \u0022height \u0022 \u002B firstAlien\n            .Merged.Height \u002B \u0022, weight  \u0022 \u002B firstAlien.Merged.Weight \u002B \u0022, and \u0022\n            \u002B firstAlien.Merged.HandCount \u002B \u0022 hands.\u0022);\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #8. The cell type is code cell. The cell index is 8.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is We got a super alien with name Super ML.NET, age 4002, height 6000, weight  8000, and 10000 hands.\r\n",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "step8: Create a prediction engine and print out its prediction\n\u0060\u0060\u0060csharp\nvar engine = mlContext.Model.CreatePredictionEngine\u003CAlienHero,\n            SuperAlienHero\u003E(model);\n\nvar alien = new AlienHero(\u0022TEN.LM\u0022, 1, 2, 3, 4, 5, 6, 7, 8);\nvar superAlien = engine.Predict(alien);\nConsole.Write(\u0022We got a super alien with name \u0022 \u002B superAlien.Name \u002B\n            \u0022, age \u0022 \u002B superAlien.Merged.Age \u002B \u0022, height \u0022 \u002B\n            superAlien.Merged.Height \u002B \u0022, weight \u0022 \u002B superAlien.Merged.Weight \u002B\n            \u0022, and \u0022 \u002B superAlien.Merged.HandCount \u002B \u0022 hands.\u0022);\n\u0060\u0060\u0060\n@notebook_writer, save this cell as cell #9. The cell type is code cell. The cell index is 9.",
+    "role": "assistant",
+    "name": "engineer"
+  },
+  {
+    "content": "cell is added to D:\\CodingTask\\CustomMappingWithInMemoryCustomType\\CustomMappingWithInMemoryCustomType.ipynb.\r\nThe output is We got a super alien with name Super TEN.LM, age 6, height 8, weight 10, and 12 hands.",
+    "role": "function",
+    "name": "notebook_writer"
+  },
+  {
+    "content": "From admin:\nGreat job, engineer! The dotnet interactive notebook has been successfully created with all the required cells. The notebook file has been saved as CustomMappingWithInMemoryCustomType.ipynb.",
+    "role": "assistant",
+    "name": "admin"
+  }
+]

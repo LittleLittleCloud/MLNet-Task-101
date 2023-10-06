@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LbfgsPoissonRegressionWithOptions",
+  "task_description": "Implement the LbfgsPoissonRegressionWithOptions example using ML.NET",
+  "output": "LbfgsPoissonRegressionWithOptions_Output.txt",
+  "is_succeed": true
+}

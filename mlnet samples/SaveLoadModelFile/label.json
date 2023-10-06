@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SaveLoadModelFile",
+  "task_description": "Implement the provided C# code in a dotnet interactive notebook and save the output to a file.",
+  "output": "output.txt",
+  "is_succeed": true
+}

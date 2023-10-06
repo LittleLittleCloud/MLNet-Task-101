@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve OneHotEncodingMultiColumn task",
+  "task_description": "Implement the OneHotEncodingMultiColumn example using dotnet interactive notebook",
+  "output": "OneHotEncodingMultiColumn.ipynb",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve DetectIidChangePoint Task",
+  "task_description": "Implement the DetectIidChangePoint example using dotnet interactive notebook.",
+  "output": "DetectIidChangePoint.ipynb",
+  "is_succeed": false
+}

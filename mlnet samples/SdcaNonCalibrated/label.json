@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SdcaNonCalibrated Example",
+  "task_description": "Implement the provided C# code for SdcaNonCalibrated example in a dotnet interactive notebook.",
+  "output": "SdcaNonCalibrated.ipynb",
+  "is_succeed": true
+}

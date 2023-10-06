@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve Forecasting Task",
+  "task_description": "Implement the provided C# code as a dotnet interactive notebook",
+  "output": "Forecasting.ipynb",
+  "is_succeed": false
+}

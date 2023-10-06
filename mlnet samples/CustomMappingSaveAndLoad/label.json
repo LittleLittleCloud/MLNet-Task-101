@@ -1,0 +1,6 @@
+{
+  "task_name": "CustomMappingSaveAndLoad",
+  "task_description": "Implement a custom mapping transformation in ML.NET and save the transformed data to an output file.",
+  "output": "customTransform.zip",
+  "is_succeed": true
+}

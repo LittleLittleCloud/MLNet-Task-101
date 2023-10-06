@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve CalculateFeatureContribution task",
+  "task_description": "Implement the CalculateFeatureContribution example using the provided C# code",
+  "output": "CalculateFeatureContribution.ipynb",
+  "is_succeed": true
+}

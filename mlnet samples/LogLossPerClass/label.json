@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve LogLossPerClass Task",
+  "task_description": "Implement the LogLossPerClass example using the provided C# code and save the result to an output file.",
+  "output": "logloss_results.txt",
+  "is_succeed": true
+}

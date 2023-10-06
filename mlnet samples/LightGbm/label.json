@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LightGBM Regression",
+  "task_description": "Implement the provided C# code for training and evaluating a LightGBM regression model.",
+  "output": "LightGBM_Results.txt",
+  "is_succeed": true
+}

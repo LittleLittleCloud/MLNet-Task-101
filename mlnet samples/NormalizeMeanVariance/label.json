@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeMeanVariance",
+  "task_description": "Implement the NormalizeMeanVariance example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

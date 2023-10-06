@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Sdca Trainer",
+  "task_description": "Implement the Sdca trainer in the provided C# code and save the notebook as Sdca.ipynb",
+  "output": "Sdca.ipynb",
+  "is_succeed": true
+}

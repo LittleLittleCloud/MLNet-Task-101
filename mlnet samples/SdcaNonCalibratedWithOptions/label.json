@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SdcaNonCalibratedWithOptions",
+  "task_description": "Implement the SdcaNonCalibratedWithOptions example using the provided C# code",
+  "output": "SdcaNonCalibratedWithOptionsOutput.txt",
+  "is_succeed": true
+}

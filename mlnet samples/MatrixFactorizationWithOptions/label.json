@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Matrix Factorization with Options",
+  "task_description": "Implement the provided C# code as a dotnet interactive notebook, saving the output to a file.",
+  "output": "output.txt",
+  "is_succeed": true
+}

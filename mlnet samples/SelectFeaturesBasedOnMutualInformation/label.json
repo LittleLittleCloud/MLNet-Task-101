@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SelectFeaturesBasedOnMutualInformation Task",
+  "task_description": "Implement the SelectFeaturesBasedOnMutualInformation example using a dotnet interactive notebook",
+  "output": "SelectFeaturesBasedOnMutualInformation.ipynb",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve TokenizeIntoCharactersAsKeys Task",
+  "task_description": "Implement the TokenizeIntoCharactersAsKeys example in a dotnet interactive notebook",
+  "output": "TokenizeIntoCharactersAsKeys.ipynb",
+  "is_succeed": false
+}

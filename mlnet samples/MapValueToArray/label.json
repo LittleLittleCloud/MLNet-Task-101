@@ -1,0 +1,6 @@
+{
+  "task_name": "MapValueToArray",
+  "task_description": "Implement the MapValueToArray example in C#",
+  "output": "output.txt",
+  "is_succeed": true
+}

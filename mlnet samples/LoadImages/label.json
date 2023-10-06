@@ -1,0 +1,6 @@
+{
+  "task_name": "Load Images",
+  "task_description": "Implement the provided C# code to load images and display their properties.",
+  "output": "load_images_output.txt",
+  "is_succeed": false
+}

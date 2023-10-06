@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeSupervisedBinning",
+  "task_description": "Implement the NormalizeSupervisedBinning example using the provided C# code.",
+  "output": "output.txt",
+  "is_succeed": true
+}

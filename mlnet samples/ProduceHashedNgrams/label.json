@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement ProduceHashedNgrams",
+  "task_description": "Implement the provided C# code for producing hashed n-grams using ML.NET",
+  "output": "ProduceHashedNgrams_output.txt",
+  "is_succeed": true
+}

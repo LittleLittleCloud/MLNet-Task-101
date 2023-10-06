@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve DropColumns task",
+  "task_description": "Implement the DropColumns example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

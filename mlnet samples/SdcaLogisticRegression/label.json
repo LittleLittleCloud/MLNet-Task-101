@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SdcaLogisticRegression",
+  "task_description": "Implement the SdcaLogisticRegression example using the provided C# code",
+  "output": "SdcaLogisticRegressionOutput.txt",
+  "is_succeed": true
+}

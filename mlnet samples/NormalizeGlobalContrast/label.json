@@ -1,0 +1,6 @@
+{
+  "task_name": "Normalize Global Contrast",
+  "task_description": "Implement the NormalizeGlobalContrast method in C# code",
+  "output": "transformedData.txt",
+  "is_succeed": true
+}

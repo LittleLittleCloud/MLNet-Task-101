@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SaveAndLoadFromText",
+  "task_description": "Implement the SaveAndLoadFromText example in a dotnet interactive notebook",
+  "output": "data.tsv",
+  "is_succeed": true
+}

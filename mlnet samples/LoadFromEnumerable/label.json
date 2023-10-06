@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve LoadFromEnumerable Task",
+  "task_description": "Implement the LoadFromEnumerable example in a dotnet interactive notebook",
+  "output": "LoadFromEnumerable.ipynb",
+  "is_succeed": true
+}

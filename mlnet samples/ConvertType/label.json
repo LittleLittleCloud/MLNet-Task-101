@@ -1,0 +1,6 @@
+{
+  "task_name": "ConvertType",
+  "task_description": "Convert the \u0027Survived\u0027 column from boolean to integer",
+  "output": "converted_data.csv",
+  "is_succeed": true
+}

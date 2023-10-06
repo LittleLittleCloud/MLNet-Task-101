@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve LocalizeRootCauseMultidimension Task",
+  "task_description": "Implement the provided C# code in a dotnet interactive notebook to localize root causes in multiple dimensions",
+  "output": "LocalizeRootCauseMultidimension.ipynb",
+  "is_succeed": false
+}

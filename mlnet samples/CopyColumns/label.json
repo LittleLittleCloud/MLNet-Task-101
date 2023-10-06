@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve CopyColumns task",
+  "task_description": "Implement the CopyColumns functionality in the provided C# code",
+  "output": "CopyColumnsOutput.txt",
+  "is_succeed": true
+}
