@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SgdCalibrated Example",
+  "task_description": "Implement the provided C# code for the SgdCalibrated example and save the result to an output file.",
+  "output": "SgdCalibratedOutput.txt",
+  "is_succeed": true
+}

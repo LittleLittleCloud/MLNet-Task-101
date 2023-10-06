@@ -1,0 +1,6 @@
+{
+  "task_name": "ConvertTypeMultiColumn",
+  "task_description": "Implement the ConvertTypeMultiColumn example in C#",
+  "output": "output.txt",
+  "is_succeed": true
+}

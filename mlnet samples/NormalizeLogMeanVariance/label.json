@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve NormalizeLogMeanVariance Task",
+  "task_description": "Implement the NormalizeLogMeanVariance example using a dotnet interactive notebook.",
+  "output": "NormalizeLogMeanVariance.ipynb",
+  "is_succeed": true
+}

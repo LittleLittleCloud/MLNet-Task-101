@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeMinMaxMulticolumn",
+  "task_description": "Implement the NormalizeMinMaxMulticolumn example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

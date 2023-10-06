@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LbfgsLogisticRegression",
+  "task_description": "Implement the LbfgsLogisticRegression example using ML.NET",
+  "output": "LbfgsLogisticRegressionOutput.txt",
+  "is_succeed": true
+}

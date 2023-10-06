@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement One-Class Matrix Factorization",
+  "task_description": "Implement the provided C# code for One-Class Matrix Factorization using ML.NET",
+  "output": "result.txt",
+  "is_succeed": true
+}

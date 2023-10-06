@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LdSvmWithOptions",
+  "task_description": "Implement the LdSvmWithOptions example using the provided C# code",
+  "output": "LdSvmWithOptionsOutput.txt",
+  "is_succeed": true
+}

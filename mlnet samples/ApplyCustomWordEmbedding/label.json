@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement ApplyCustomWordEmbedding",
+  "task_description": "Implement the ApplyCustomWordEmbedding example using ML.NET",
+  "output": "ApplyCustomWordEmbedding.ipynb",
+  "is_succeed": true
+}

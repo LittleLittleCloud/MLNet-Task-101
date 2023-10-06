@@ -1,0 +1,6 @@
+{
+  "task_name": "Create CountTargetEncoding Notebook",
+  "task_description": "Create a dotnet interactive notebook for the provided C# code to implement CountTargetEncoding",
+  "output": "CountTargetEncoding.ipynb",
+  "is_succeed": true
+}

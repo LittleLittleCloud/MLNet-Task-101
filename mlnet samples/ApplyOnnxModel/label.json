@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement ApplyOnnxModel",
+  "task_description": "Implement the ApplyOnnxModel example using the provided C# code and save the result to an output file.",
+  "output": "output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Replace Missing Values",
+  "task_description": "Implement the ReplaceMissingValues example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

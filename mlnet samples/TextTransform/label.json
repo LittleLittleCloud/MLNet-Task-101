@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve TextTransform Task",
+  "task_description": "Implement the TextTransform example using C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

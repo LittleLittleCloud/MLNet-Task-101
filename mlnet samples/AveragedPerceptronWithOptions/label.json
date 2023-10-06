@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement AveragedPerceptronWithOptions",
+  "task_description": "Implement the AveragedPerceptronWithOptions example in C# using ML.NET",
+  "output": "AveragedPerceptronWithOptionsOutput.txt",
+  "is_succeed": true
+}

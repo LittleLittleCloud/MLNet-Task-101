@@ -23,19 +23,23 @@ $failNotebooks = @()
 $exitCode = 0
 foreach ($notebook in $notebooks) {
     Write-Host "Running $notebook"
-    $name = $notebook.Name
-    $outputPath = "$outputFolder\$name"
+    # get notebook name with extension
+    $name = Split-Path -Leaf $notebook
+    Write-Host "Name: $name"
     $notebookFolder = Split-Path -Parent $notebook
+    $outputPath = "$outputFolder\$notebookFolder"
     Set-Location $notebookFolder
-    $result = dotnet repl --run $notebook --exit-after-run --output-path $outputPath --working-dir $outputFolder
+    $result = dotnet repl --run $name --exit-after-run
+    Write-Host $result
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Failed to run $notebook"
         $failNotebooks += $notebook
         $exitCode = 1
     }
-
-    Write-Host "Finished running $notebook"
-    Write-Host "Saving output to $notebook"
+    else{
+        Write-Host "Successfully ran $notebook"
+    }
+    Set-Location $rootPath
 }
 
 Write-Host "Failed notebooks:"

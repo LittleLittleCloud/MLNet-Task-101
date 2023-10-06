@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement KMeansWithOptions",
+  "task_description": "Implement the provided C# code for KMeans algorithm with options",
+  "output": "KMeansWithOptionsOutput.txt",
+  "is_succeed": true
+}

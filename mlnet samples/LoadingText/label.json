@@ -1,0 +1,6 @@
+{
+  "task_name": "LoadingText",
+  "task_description": "Implement the provided C# code to load and process text data",
+  "output": "output.txt",
+  "is_succeed": true
+}

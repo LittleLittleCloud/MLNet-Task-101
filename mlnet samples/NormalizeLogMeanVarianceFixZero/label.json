@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeLogMeanVarianceFixZero",
+  "task_description": "Implement the NormalizeLogMeanVarianceFixZero example using the provided C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

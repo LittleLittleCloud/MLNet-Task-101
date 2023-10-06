@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement WithOnFitDelegate",
+  "task_description": "Implement the provided C# code using dotnet interactive notebook",
+  "output": "WithOnFitDelegate.ipynb",
+  "is_succeed": true
+}

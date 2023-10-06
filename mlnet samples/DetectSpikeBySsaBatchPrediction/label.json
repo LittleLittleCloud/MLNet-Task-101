@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement DetectSpikeBySsaBatchPrediction",
+  "task_description": "Implement the provided C# code for detecting spikes in a time series using SSA (Singular Spectrum Analysis) and save the result to an output file.",
+  "output": "spike_detection_result.txt",
+  "is_succeed": false
+}

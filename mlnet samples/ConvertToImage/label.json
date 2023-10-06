@@ -1,0 +1,6 @@
+{
+  "task_name": "ConvertToImage",
+  "task_description": "Implement the ConvertToImage example using the provided C# code",
+  "output": "output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve SelectFeaturesBasedOnCountMultiColumn",
+  "task_description": "Implement the SelectFeaturesBasedOnCountMultiColumn example using a dotnet interactive notebook",
+  "output": "SelectFeaturesBasedOnCountMultiColumn.ipynb",
+  "is_succeed": true
+}

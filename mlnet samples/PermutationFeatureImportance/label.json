@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve PermutationFeatureImportance task",
+  "task_description": "Implement the PermutationFeatureImportance example using the provided C# code",
+  "output": "PermutationFeatureImportance.txt",
+  "is_succeed": true
+}

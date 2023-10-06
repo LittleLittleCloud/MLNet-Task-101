@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve ApplyWordEmbedding task",
+  "task_description": "Implement the ApplyWordEmbedding functionality using the provided C# code",
+  "output": "ApplyWordEmbedding.ipynb",
+  "is_succeed": true
+}

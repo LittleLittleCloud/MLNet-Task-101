@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve BootstrapSample task",
+  "task_description": "Implement the BootstrapSample example using dotnet interactive notebook",
+  "output": "BootstrapSample.ipynb",
+  "is_succeed": true
+}

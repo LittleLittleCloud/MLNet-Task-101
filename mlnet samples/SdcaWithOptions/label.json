@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SdcaWithOptions",
+  "task_description": "Implement the SdcaWithOptions example using the provided C# code",
+  "output": "SdcaWithOptions.ipynb",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve ShuffleRows task",
+  "task_description": "Implement the ShuffleRows example using the provided C# code",
+  "output": "ShuffledData.txt",
+  "is_succeed": true
+}

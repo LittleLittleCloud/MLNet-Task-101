@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve FilterRowsByColumn Task",
+  "task_description": "Implement the FilterRowsByColumn example using a dotnet interactive notebook.",
+  "output": "FilterRowsByColumn.ipynb",
+  "is_succeed": true
+}

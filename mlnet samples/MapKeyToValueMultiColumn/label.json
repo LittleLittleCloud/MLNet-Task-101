@@ -1,0 +1,6 @@
+{
+  "task_name": "MapKeyToValueMultiColumn",
+  "task_description": "Implement the MapKeyToValueMultiColumn example using ML.NET",
+  "output": "output.txt",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve IndicateMissingValues task",
+  "task_description": "Implement the provided C# code as a dotnet interactive notebook and save the output to a file.",
+  "output": "IndicateMissingValues_Output.txt",
+  "is_succeed": true
+}

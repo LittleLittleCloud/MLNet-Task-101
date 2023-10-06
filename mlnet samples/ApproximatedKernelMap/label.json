@@ -1,0 +1,6 @@
+{
+  "task_name": "ApproximatedKernelMap",
+  "task_description": "Implement the ApproximatedKernelMap algorithm in C#",
+  "output": "transformedData.txt",
+  "is_succeed": true
+}

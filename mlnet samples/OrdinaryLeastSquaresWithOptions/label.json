@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Ordinary Least Squares with Options",
+  "task_description": "Implement the provided C# code for Ordinary Least Squares with options as a dotnet interactive notebook.",
+  "output": "OrdinaryLeastSquaresWithOptions.ipynb",
+  "is_succeed": true
+}

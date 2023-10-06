@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement DetectChangePointBySsa",
+  "task_description": "Implement the DetectChangePointBySsa example using the provided C# code and save the output to a file.",
+  "output": "change_point_predictions.txt",
+  "is_succeed": false
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "LbfgsPoissonRegression",
+  "task_description": "Implement the L-BFGS Poisson Regression algorithm using ML.NET",
+  "output": "LbfgsPoissonRegression_output.txt",
+  "is_succeed": true
+}

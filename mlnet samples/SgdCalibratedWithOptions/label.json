@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement SgdCalibratedWithOptions",
+  "task_description": "Implement the provided C# code for SgdCalibratedWithOptions",
+  "output": "SgdCalibratedWithOptions.cs",
+  "is_succeed": true
+}

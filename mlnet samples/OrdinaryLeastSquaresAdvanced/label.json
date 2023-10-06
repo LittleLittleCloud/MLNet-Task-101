@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement Ordinary Least Squares Advanced",
+  "task_description": "Implement the provided C# code for Ordinary Least Squares Advanced in a dotnet interactive notebook.",
+  "output": "OrdinaryLeastSquaresAdvanced.ipynb",
+  "is_succeed": false
+}

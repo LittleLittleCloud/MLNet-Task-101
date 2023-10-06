@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve Concatenate Task",
+  "task_description": "Implement the provided C# code in a dotnet interactive notebook",
+  "output": "Concatenate.ipynb",
+  "is_succeed": true
+}

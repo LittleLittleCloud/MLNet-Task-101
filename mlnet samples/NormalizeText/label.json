@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeText",
+  "task_description": "Implement the NormalizeText example in C#",
+  "output": "NormalizedText.txt",
+  "is_succeed": true
+}

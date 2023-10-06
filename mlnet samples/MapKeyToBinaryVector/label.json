@@ -1,0 +1,6 @@
+{
+  "task_name": "MapKeyToBinaryVector",
+  "task_description": "Implement the MapKeyToBinaryVector example using ML.NET",
+  "output": "MapKeyToBinaryVector_Output.txt",
+  "is_succeed": true
+}

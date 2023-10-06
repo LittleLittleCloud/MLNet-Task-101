@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement FastTreeTweedie Regression",
+  "task_description": "Implement the FastTreeTweedie Regression algorithm using the provided C# code and save the results to an output file.",
+  "output": "fast_tree_tweedie_results.txt",
+  "is_succeed": true
+}

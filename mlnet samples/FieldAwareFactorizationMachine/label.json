@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement FieldAwareFactorizationMachine",
+  "task_description": "Implement the FieldAwareFactorizationMachine example using the provided C# code and save the notebook as FieldAwareFactorizationMachine.ipynb",
+  "output": "FieldAwareFactorizationMachine.ipynb",
+  "is_succeed": true
+}

@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement KMeans Clustering",
+  "task_description": "Implement the KMeans clustering algorithm using the provided C# code and save the results to an output file.",
+  "output": "kmeans_results.txt",
+  "is_succeed": true
+}

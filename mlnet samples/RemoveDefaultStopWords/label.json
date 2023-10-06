@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement RemoveDefaultStopWords",
+  "task_description": "Implement the RemoveDefaultStopWords functionality using the provided C# code",
+  "output": "RemoveDefaultStopWords.ipynb",
+  "is_succeed": true
+}

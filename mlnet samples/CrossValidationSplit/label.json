@@ -1,0 +1,6 @@
+{
+  "task_name": "Resolve CrossValidationSplit task",
+  "task_description": "Implement the CrossValidationSplit example using the provided C# code",
+  "output": "CrossValidationSplit.ipynb",
+  "is_succeed": true
+}

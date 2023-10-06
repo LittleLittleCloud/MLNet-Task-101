@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement AveragedPerceptron",
+  "task_description": "Implement the AveragedPerceptron algorithm using the provided C# code and save the result to an output file.",
+  "output": "result.txt",
+  "is_succeed": true
+}

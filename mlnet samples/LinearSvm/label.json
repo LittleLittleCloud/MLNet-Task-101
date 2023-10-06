@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LinearSvm Algorithm",
+  "task_description": "Implement the LinearSvm algorithm using the provided C# code and save the output to a file.",
+  "output": "linear_svm_output.txt",
+  "is_succeed": false
+}

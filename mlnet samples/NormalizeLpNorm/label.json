@@ -1,0 +1,6 @@
+{
+  "task_name": "NormalizeLpNorm",
+  "task_description": "Implement the NormalizeLpNorm algorithm in C#",
+  "output": "output.txt",
+  "is_succeed": true
+}

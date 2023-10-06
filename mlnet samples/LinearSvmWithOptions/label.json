@@ -1,0 +1,6 @@
+{
+  "task_name": "Implement LinearSvmWithOptions",
+  "task_description": "Implement the provided C# code for LinearSvmWithOptions",
+  "output": "LinearSvmWithOptionsOutput.txt",
+  "is_succeed": true
+}
